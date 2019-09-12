@@ -1,0 +1,308 @@
+body {
+	min-width: 320px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Open Sans, Arial, sans-serif;
+}
+
+@font-face {
+	font-family: Open Sans;
+	src: url('fonts/OpenSans-Regular.woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Open Sans;
+	src: url('fonts/OpenSans-Bold.woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	font-size: inherit;
+	margin: 0;
+}
+
+p {
+	margin: 5% 0 0 0;
+}
+
+.header {
+	background-image: url('images/football_767.jpg');
+	background-repeat: no-repeat;
+  	background-position: 100% auto;
+  	background-size: cover;
+  	position: relative;
+}
+
+.header:after {
+	content: "";
+	position: absolute;
+	background-color: #19193b;
+	opacity: 0.9;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.header-wrap {
+	padding: 10% 6.25% 25%;
+	position: relative;
+	z-index: 1;
+}
+
+.header-logo {
+	margin: 0 auto;
+	width: 48.2%;
+}
+
+.header-text {
+	color: #ffffff;
+	font-size: 28px;
+	width: 100%;
+	margin-top: 48%;
+}
+
+.second-text {
+	display: block;
+	margin: 7% 0 0 16%;
+}
+
+.buttons {
+	width: 100%;
+	margin-top: 30%;
+}
+
+.app-button {
+	width: 100%;
+	height: 12.5%;
+	background-color: #5e42b0;
+	display: flex;
+	fill: #ffffff;
+	color: #ffffff;
+	border-radius: 100px;
+	border: none;
+	padding: 1% 25% 2%;
+	text-transform: uppercase;
+}
+
+.app-button:nth-child(n+2) {
+	margin-top: 5%;
+}
+
+.app-button:hover {
+  fill: black;
+  color: black;
+  cursor: pointer;
+}
+
+.store-logo {
+	width: 15%;
+}
+
+.button-text {
+	margin-top: 2%;
+	margin-left: 10%;
+	font-size: 8px;
+	text-align: left;
+}
+
+.store {
+	font-weight: 700;
+}
+
+.image {
+	width: 100%;
+}
+
+.athlets-header {
+	padding: 6.25% 6.25% 76.5% 6.25%; 
+	font-size: 50px;
+	color: #e7e7e7;
+	font-weight: 700;
+
+}
+
+.athlets {
+	position: relative;
+}
+
+.connection {
+	background-color: #fafafa;
+	padding-top: 10%;
+}
+
+.footballer {
+	position: absolute;
+	z-index: 1;
+	left: 22%;
+	top: 10%;
+}
+
+.block-container {
+	padding: 15% 6.25% 15% 6.25%;
+}
+
+
+.athlets__block-header {
+	display: flex;
+	font-size: 23px;
+	color: #c1c1c1;
+}
+
+.block-text {
+	font-size: 15px;
+}
+
+.block-number {
+	z-index: 1;
+	font-weight: bold;
+	color: black;
+	font-size: 14px;
+	margin-top: 3px;
+	margin-right: 10px;
+}
+
+.block-number::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 4px;
+	background-color: #5e42b0;
+	border-radius: 2px;
+}
+
+.block-number::before {
+	content: "";
+	display: none;
+    position: absolute;
+    width: 70px;
+    z-index: -1;
+    height: 70px;
+    background-color: #5e42b0;
+    right: -175%;
+    bottom: -135%;
+}
+
+.collaboration {
+	background-color: #f5f4f9;
+}
+
+.growth {
+	color: #ffffff;
+}
+
+.athlets .growth {
+	background-color: #5e42b0;
+}
+
+.growth .block-number::after {
+	content: "";
+	background-color: #ffffff;
+}
+
+.players {
+	position: relative;
+}
+
+.players .growth {
+	background-color: #090c35;
+}
+
+.players .growth .block-number {
+	color: #8765dd;
+}
+
+.players .growth .block-number::after {
+	content: "";
+	background-color: #ffffff;
+}
+
+.basketballer {
+	position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+.content-block {
+	position: relative;
+}
+
+.number {
+	z-index: 1;
+	color: #ffffff;
+	position: relative;
+}
+
+.number .block-number {
+	position: absolute;
+	left: 15.6%;
+	bottom: 15px;
+	margin: 0;
+	color: #ffffff;
+}
+
+.number .block-number::after {
+	background-color: #8f7bc8;
+	z-index: 1;
+
+}
+
+
+.number .block-number::before {
+	display: block;
+}
+
+
+.text-block {
+	font-size: 16px;
+	padding: 9.5% 6.25% 23.5%;
+}
+
+.text-block h2 {
+	font-size: 28px;
+	color: #e7e7e7;
+}
+
+.footer {
+	background-image: url('images/game_767.jpg');
+	background-repeat: no-repeat;
+  	background-position: 100% auto;
+  	background-size: cover;
+  	position: relative;
+}
+
+.footer:after {
+	content: "";
+	position: absolute;
+	background-color: #19193b;
+	opacity: 0.9;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.footer-wrap {
+	padding: 31.25% 6.25% 3.125%;
+	position: relative;
+	z-index: 1;
+}
+
+.footer-text-wrap {
+	font-size: 32px;
+	color: #ffffff;
+	margin: 20% auto 25% auto;
+}
+
+.footer-text {
+	color: #7d74a3;
+	font-size: 14px;
+	display: block;
+	text-transform: uppercase;
+
+}
