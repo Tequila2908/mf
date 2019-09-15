@@ -28,6 +28,12 @@ h1, h2, h3 {
 
 p {
 	margin: 5% 0 0 0;
+	min-width: 40%;
+    max-width: 75%;
+}
+
+picture {
+	display: flex;
 }
 
 .header {
@@ -55,7 +61,7 @@ p {
 	z-index: 1;
 }
 
-.header-logo {
+.logo {
 	margin: 0 auto;
 	width: 48.2%;
 }
@@ -78,6 +84,7 @@ p {
 }
 
 .app-button {
+	display: block;
 	width: 100%;
 	height: 12.5%;
 	background-color: #5e42b0;
@@ -86,8 +93,10 @@ p {
 	color: #ffffff;
 	border-radius: 100px;
 	border: none;
-	padding: 1% 25% 2%;
+	padding: 2% 25% 2%;
 	text-transform: uppercase;
+	text-decoration: none;
+	box-sizing: border-box;
 }
 
 .app-button:nth-child(n+2) {
@@ -119,7 +128,7 @@ p {
 	width: 100%;
 }
 
-.athlets-header {
+.header-block {
 	padding: 6.25% 6.25% 76.5% 6.25%; 
 	font-size: 50px;
 	color: #e7e7e7;
@@ -139,7 +148,7 @@ p {
 .footballer {
 	position: absolute;
 	z-index: 1;
-	left: 22%;
+	right: 20%;
 	top: 10%;
 }
 
@@ -148,7 +157,7 @@ p {
 }
 
 
-.athlets__block-header {
+.block-header {
 	display: flex;
 	font-size: 23px;
 	color: #c1c1c1;
@@ -185,7 +194,7 @@ p {
     height: 70px;
     background-color: #5e42b0;
     right: -175%;
-    bottom: -135%;
+    bottom: -115%;
 }
 
 .collaboration {
@@ -225,11 +234,15 @@ p {
 .basketballer {
 	position: absolute;
     top: 10%;
-    left: 3%;
+    right: 3%;
 }
 
 .content-block {
 	position: relative;
+}
+
+.content-block img {
+		width: 100%;
 }
 
 .number {
@@ -293,6 +306,26 @@ p {
 	z-index: 1;
 }
 
+.surface-logo {
+	position: relative;
+	width: 55px;
+    margin: 0 auto 0 auto;
+    fill: #ffffff;
+}
+
+.surface-logo::before {
+	content: "";
+	display: block;
+	width: 75px;
+	height: 75px;
+	border-radius: 20px;
+	background-color: #7353d0;
+	position: absolute;
+	z-index: -1;
+	left: -10px;
+	bottom: -10px;
+}
+
 .footer-text-wrap {
 	font-size: 32px;
 	color: #ffffff;
@@ -304,5 +337,365 @@ p {
 	font-size: 14px;
 	display: block;
 	text-transform: uppercase;
+}
 
+.footer .buttons {
+		margin-bottom: 15%;
+	}
+
+@media (min-width: 641px) {
+
+	.header-wrap {
+		padding: 5% 7% 25%;
+	}
+
+	.logo {
+		width: 27%;
+	}
+
+	.header-text {
+		font-size: 64px;
+		margin-top: 22%;
+		padding: 0 0 0 5%;
+	}
+
+	.second-text {
+		margin-top: 0;
+	}
+
+	.buttons {
+		margin-top: 47%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.app-button {
+		max-height: 75px;
+		width: 310px;
+		padding: 2% 6% 3%;
+	}
+
+	.app-button:nth-child(n+2) {
+		margin-top: 0;
+		margin-left: 4%;
+}
+
+	.store-logo {
+		width: 25%;
+	}
+
+	.button-text {
+		font-size: 14px;
+		margin-left: 5%;
+		margin-top: 1%;
+	}
+
+	.header-block {
+		font-size: 80px;
+		padding: 11% 6.25% 1% 40%;
+	}
+
+	.footballer {
+    	right: calc(100% - 330px);
+    	top: 14%;
+    }
+
+    .connection {
+		background-color: #ffffff;
+		padding-top: 0;
+	}
+
+	.block-container {
+		padding: 4% 6.25% 5% 40%;
+	}
+
+	.block-header {
+		font-size: 32px;
+	}
+
+	.block-number {
+		font-size: 18px;
+		margin-top: 8px;
+	}
+
+	.block-text {
+		font-size: 16px;
+	}
+
+	.players .block-container {
+		padding-left: 4%;
+	}
+
+	.players .header-block {
+		padding-left: 4%;
+	}
+
+	.basketballer {
+		right: 0;
+	}
+
+	.number .block-number {
+		font-size: 24px;
+		left: 10%;
+	}
+
+	.block-number::before {
+    	width: 115px;
+    	height: 115px;
+    	right: -160%;
+    	bottom: -120%;
+	}
+
+	.content-block h2 {
+		font-size: 80px;
+	}
+
+	.text-block {
+		font-size: 24px;
+    	padding: 6.5% 4.5% 12%;
+	}
+
+	.footer-wrap {
+		padding: 16.5% 4.5% 3.125%;
+	}
+
+	.surface-logo {
+		width: 105px;
+		margin-top: 12%;
+		margin-bottom: 10%;
+	}
+
+	.surface-logo::before {
+		width: 130px;
+		height: 130px;
+	}
+
+	.footer-text-wrap {
+		font-size: 80px;
+		text-align: center;
+		margin: 0
+	}
+
+	.footer-text {
+		font-size: 36px;
+	}
+
+	.footer .buttons {
+		margin-bottom: 15%;
+	}
+}
+
+@media (min-width: 961px) {
+	p {
+		margin-top: 13%;
+	}
+
+	.header {
+		background-image: url('images/football_1920.jpg');
+		background-position: center center;
+	}
+
+	.header-wrap {
+		padding: 2.3% 7% 5.6%;
+	}
+
+	.logo {
+		width: 11%;
+	}
+
+	.header-text {
+		font-size: 90px;
+		margin-top: 17%;
+		padding: 0 0 0 5%;
+	}
+
+	.second-text {
+		margin-top: 0;
+		margin-left: 25%;
+	}
+
+	.buttons {
+		margin-top: 12.4%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.app-button {
+		max-height: 75px;
+		width: 310px;
+		padding: 0.7% 2.5%;
+	}
+
+	.app-button:nth-child(n+2) {
+		margin-top: 0;
+		margin-left: 3%;
+}
+
+	.store-logo {
+		width: 17%;
+	}
+
+	.button-text {
+		margin-left: 11%;
+    	margin-top: 4%;
+	}
+
+	.header-block {
+		font-size: 80px;
+		padding: 6% 6.25% 1% 52%;
+	}
+
+	.footballer {
+    	    right: 50%;
+    		top: 5%;
+    }
+
+    .connection {
+		background-color: #ffffff;
+		padding-top: 0;
+	}
+
+	.block-container {
+		padding: 3% 6.25% 2.5% 52%;
+	}
+
+	.block-header {
+		font-size: 36px;
+	}
+
+	.block-number {
+		font-size: 18px;
+		margin-top: 8px;
+	}
+
+	.block-text {
+		font-size: 16px;
+		max-width: 86%;
+		margin-top: 
+	}
+
+	.block-text p {
+		margin-top: 2.5%;
+	}
+
+	.players .block-container {
+		padding-left: 4%;
+	}
+
+	.players .header-block {
+		padding-left: 4%;
+	}
+
+	.basketballer {
+		top: 3%;
+	}
+
+	.number {
+		position: static;
+	}
+
+	.number .block-number {
+		left: calc(50% - 15px);
+    	bottom: 50%;
+	}
+
+	.block-number::before {
+    	width: 85px;
+    	height: 75px;
+    	right: -110%;
+    	bottom: -65%;
+	}
+
+	.content-block {
+		display: flex;
+	}
+
+
+	.content-block img {
+		width: 100%;
+	}
+
+	.content-block h2 {
+		font-size: 65px;
+	}
+
+
+	.content-block p {
+		margin-right: 0;
+	}
+
+	.content-block:nth-child(2n+2) {
+		flex-direction: row-reverse;
+	}
+
+	.image {
+		width: 50%;
+		min-width: 50%;
+	}
+
+	.text-block {
+		width: 50%;
+		font-size: 24px;
+    	padding: 8% 1% 0 7%;
+	}
+
+	.footer-wrap {
+		padding: 16.5% 4.5% 3.125%;
+	}
+
+	.footer-text-wrap {
+		font-size: 80px;
+		text-align: center;
+		margin: 0 0 0 2%;
+	}
+
+	.footer-text {
+		font-size: 36px;
+	}
+
+	.footer .buttons {
+		margin-bottom: 15%;
+	}
+
+	.logo-position {
+		display: flex;
+    	justify-content: center;
+    	margin: 0 auto 0 auto;
+	}
+
+	.surface-logo {
+    	margin: 35px 0 0 0;
+	}
+
+	.surface-logo::before {
+		bottom: calc(50% + -50px);
+	}
+
+	.logo-position {
+		display: flex;
+		justify-content: center;
+	}
+
+}
+
+@media (min-width: 1600px) {
+	.content-block h2 {
+		font-size: 80px;
+	}
+
+	.block-number::before {
+    	width: 170px;
+    	height: 150px;
+    	right: -250%;
+    	bottom: -170%;
+	}
+
+}
+
+@media (min-width: 1920px) {
+	.text-block {
+		width: 50%;
+		font-size: 24px;
+    	padding: 12% 6.5% 12%;
+	}
 }
